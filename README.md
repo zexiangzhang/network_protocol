@@ -2,7 +2,7 @@
 
 ## [Http、Https协议](https://github.com/zexiangzhang/network_protocol/http_https.md)
 
-## [Cookie和Session](https://github.com/zexiangzhang/network_protocol)
+## [Cookie、Session](https://github.com/zexiangzhang/network_protocol)
 
 ## [TCP、IP协议](https://github.com/zexiangzhang/network_protocol)
 
