@@ -3,7 +3,7 @@
 ## 一、HTTP协议
 	HTTP的全称是Hyper Text Transfer Protocol，中文名叫作超文本传输协议
 	HTTP协议是用于从网络传输超文本数据到本地浏览器的传送协议，它能保证高效而准确地传送超文本文档
-	HTTP由万维网协会（World Wide Web Consortium）和Internet工作小组IETF（Internet Engineering Task Force）共同合作制定的规范，目前广泛使用的是HTTP1.1版本
+	HTTP目前广泛使用的是HTTP1.1版本
 	
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HTTP是无状态协议
 
