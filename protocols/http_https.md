@@ -1,7 +1,17 @@
 # HTTP、HTTPS协议
 
 ## 一、HTTP协议
-	HTTP的全称是Hyper Text Transfer Protocol，中文名叫作超文本传输协议。HTTP协议是用于从网络传输超文本数据到本地浏览器的传送协议，它能保证高效而准确地传送超文本文档。HTTP由万维网协会（World Wide Web Consortium）和Internet工作小组IETF（Internet Engineering Task Force）共同合作制定的规范，目前广泛使用的是HTTP1.1版本
+	HTTP的全称是Hyper Text Transfer Protocol，中文名叫作超文本传输协议
+	HTTP协议是用于从网络传输超文本数据到本地浏览器的传送协议，它能保证高效而准确地传送超文本文档
+	HTTP由万维网协会（World Wide Web Consortium）和Internet工作小组IETF（Internet Engineering Task Force）共同合作制定的规范，目前广泛使用的是HTTP1.1版本
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HTTP是无状态协议
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 无状态是指协议对于事务处理没有记忆功能，即使可以通过同一HTTP客户端发送多个请求，服务器也不会通过一个套接字附加任何特殊含义，这仅仅是一种性能问题，旨在最大限度的减少为每个请求重新建立连接所花费的时间/带宽
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 无状态协议不要求服务器在多个请求期间保留关于每个用户的信息或者状态
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 对于新的http要求(有状态)，则在http协议上再加一层用来实现我们的目的，所以引入了其他机制来实现有状态的连接，[cookie及session](https://github.com/zexiangzhang/network_protocol/blob/master/protocols/cookie_session.md)，等其他机制
 
 ### 1.1 报文结构
 	HTTP请求报文：
@@ -81,10 +91,13 @@
 	d. http1.1提供身份认证（HTTP1.1提供一个基于口令的基本认证方式）
 	
 ## 二、HTTPS协议
-	是以安全为目标的HTTP通道，也就是安全版的HTTP，通过在HTTP下加入SSL层来提供安全传输支持。Https的主要作用包括：建立信息安全的通道，保证数据的安全传输以及确认网站的真实性
+	是以安全为目标的HTTP通道，也就是安全版的HTTP，通过在HTTP下加入SSL层来提供安全传输支持
+	Https的主要作用包括：建立信息安全的通道，保证数据的安全传输以及确认网站的真实性
 	
 ### 2.1 SSL
-	SSL一种是为网络通信提供安全以及数据完整性的安全协议，SSL位于TCP与各应用层之间，是操作系统对外提供的API，SSL3.0版本以后被称为TSL。主要通过身份验证和数据加密保证网络通信的安全和数据的完整性
+	SSL一种是为网络通信提供安全以及数据完整性的安全协议
+	SSL位于TCP与各应用层之间，是操作系统对外提供的API，SSL3.0版本以后被称为TSL
+	主要通过身份验证和数据加密保证网络通信的安全和数据的完整性
 	
 ### 2.2 客户端校验CA证书
 	CA证书中的Hash值，是用证书的私钥进行加密后的值（证书的私钥不在 CA 证书中）
